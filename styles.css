@@ -6,6 +6,7 @@ body {
     height: 100vh;
     background: linear-gradient(45deg, blue, purple);
     font-family: 'roboto', sans-serif;
+
 }
 
 .box {
@@ -14,6 +15,9 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 100px;
+    border: 1px solid black;
+    background-color: white;
+    aspect-ratio: 1 / 1;
 }
 
 #title-container {
@@ -43,11 +47,6 @@ body {
     grid-template-rows: repeat(3, 1fr);
     border: 10px solid black;
     border-radius: 7px;
-}
-
-.box {
-    border: 1px solid black;
-    background-color: white;
 }
 
 #playerForm {

@@ -33,17 +33,17 @@ for(let i = 0; i < 3; i++){
 boxes.forEach(r => {
     r.forEach(c => {
         c.addEventListener('mouseover', () => {
-            if(!c.classList.contains('clicked' && gameState)){
+            if(!c.classList.contains('clicked')){
                 c.style.backgroundColor = 'grey';
             }
         });
         c.addEventListener('mouseout', () => {
-            if(!c.classList.contains('clicked' && gameState)){
+            if(!c.classList.contains('clicked')){
                 c.style.backgroundColor = 'white';
             }
         });
         c.addEventListener('click', () => {
-            if(!c.classList.contains('clicked' && gameState)){
+            if(!c.classList.contains('clicked') && gameState){
                 c.classList.add('clicked');
                 if(playerState){
                     currentMarker = 'X'
