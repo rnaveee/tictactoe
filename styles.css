@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(45deg, blue, purple);
+}
+
+#title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 600px;
+    height: 100px;
+    border: 10px solid black;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+#title-container div:nth-child(1){
+    font-size: 50px;
+}
+
+#grid-container {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 10px solid black;
+    border-radius: 7px;
+}
+
+.box {
+    border: 1px solid black;
+    background-color: white;
+}
+
